@@ -13,7 +13,8 @@ public class LTCManager : MonoBehaviour
     private bool isPaused = false;
 
     System.Random random;
-    
+
+    public GameObject[] litecoins;
 
     // Use this for initialization
     void Start()
@@ -47,9 +48,11 @@ public class LTCManager : MonoBehaviour
     {
         while (flag)
         {
-            int randomNumber = random.Next(1, 4);
-            Debug.Log(randomNumber);
+            int rno = random.Next(1, litecoins.Length+1);
+            Debug.Log(rno);
 
+            GameObject tempObj = litecoins[rno - 1];
+            tempObj.GetComponentInChildren<showCoin>().makeActive();
             
             yield return new WaitForSeconds(gap);
 

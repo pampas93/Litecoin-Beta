@@ -13,19 +13,25 @@ public class showCoin : MonoBehaviour {
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Clicked");
-            anim.SetTrigger("OnClick");
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Debug.Log("Clicked");
+        //    anim.SetTrigger("OnClick");
+        //}
 
-        if (Input.GetMouseButtonDown(1))
-        {
-            Debug.Log("right Clicked");
-            anim.SetTrigger("OnRightClick");
-        }
+        //if (Input.GetMouseButtonDown(1))
+        //{
+        //    Debug.Log("right Clicked");
+        //    anim.SetTrigger("OnRightClick");
+        //}
 
-        if (Input.GetKeyDown("space"))
-            anim.speed = 0;
+        //if (Input.GetKeyDown("space"))
+        //    anim.speed = 0;
     }
+
+    public void makeActive()
+    {
+        anim.SetTrigger("OnClick");
+    }
+
 }
