@@ -23,5 +23,8 @@ public class showCoin : MonoBehaviour {
             Debug.Log("right Clicked");
             anim.SetTrigger("OnRightClick");
         }
+
+        if (Input.GetKeyDown("space"))
+            anim.speed = 0;
     }
 }

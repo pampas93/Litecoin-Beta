@@ -87,7 +87,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\showCoin.cs" />
+    <Compile Include="Assets\Scripts\LTCManager.cs" />
+    <Compile Include="Assets\Scripts\showCoin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
