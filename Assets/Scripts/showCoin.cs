@@ -9,6 +9,7 @@ public class showCoin : MonoBehaviour {
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        //anim.SetTrigger("OnClick");
     }
     void Update()
     {

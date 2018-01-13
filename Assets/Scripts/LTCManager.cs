@@ -53,10 +53,8 @@ public class LTCManager : MonoBehaviour
             
             yield return new WaitForSeconds(gap);
 
-            while (isPaused)
-            {
-                Debug.Log("It is paused");
-            }
+            //if(isPaused)
+            //    yield return new Wait
         }
         
     }
