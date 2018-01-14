@@ -33,16 +33,29 @@ public class LTCManager : MonoBehaviour
         if (Input.GetKeyDown("space"))
             isPaused = !isPaused;
 
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    flag = false;
-        //}
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        //if (Input.GetMouseButtonDown(1))
-        //{
-        //    flag = true;
-        //}
-    }
+            if (Physics.Raycast(ray, out hit))
+            {
+               
+                if (hit.collider.tag == "Litecoin")
+                    Debug.Log(hit.collider.transform.parent.name);
+            }
+        }
+
+            //if (Input.GetMouseButtonDown(0))
+            //{
+            //    flag = false;
+            //}
+
+            //if (Input.GetMouseButtonDown(1))
+            //{
+            //    flag = true;
+            //}
+        }
 
     IEnumerator sampleCoroutine()
     {
